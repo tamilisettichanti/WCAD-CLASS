@@ -1,0 +1,93 @@
+body {
+
+  background-image: url('chicken.jpg');
+  background-size: cover; /* Alternative: use "contain" or specific values like "100%" for different effects */
+  background-repeat: no-repeat;
+  background-position: center ;
+  height: 100vh;
+  width: 100vw;
+
+}
+.nav-bar ul {
+  color:white;
+  list-style: none;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left:200px;
+  margin-right:200px;
+  
+}
+.line{
+  width:150px;
+  height:3.5px;
+  background-color:orange;
+  margin-bottom:20px;
+}
+.nav-bar a{
+  color:whitesmoke;
+  text-decoration:none;
+  
+}
+.reserve{
+  color:whitesmoke;
+  width:500px;
+  display:flex;
+  flex-direction:column;
+  position:absolute;
+  left:20px;
+  bottom:350px;
+  
+  
+}
+.link{
+  transition:all 0.5s;
+}
+.link:hover{
+  color:grey;
+}
+.btn-reserve-table{
+  padding:10px;
+  background-color:transparent;
+  color:white;
+  border:1px solid grey;
+  border-radius:20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  transition:all 0.5s ease-out;
+  box-shadow:0px 0px 10px 0.25px;
+}
+.btn-reserve-table:hover{
+  background-color: rgb(188, 84, 4);
+}
+.restaurant-name{
+  font-size:45px;
+  
+}
+.restaurant-description{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 14px;
+}
+@media only screen and (max-width:700px){
+  .nav-bar ul {
+    color:white;
+    list-style: none;
+    display:flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    margin-left:50px;
+    margin-right:50px;
+    
+  }
+  .reserve{
+    color:whitesmoke;
+    width:500px;
+    display:flex;
+    flex-direction: column;
+    position:absolute;
+    
+    left:20px;
+    bottom:250px;
+    
+  }
+}
